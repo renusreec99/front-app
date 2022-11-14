@@ -19,7 +19,7 @@ const ListFront = () => {
         <h1 className="text-white">.</h1>
         <i
           className="bi bi-plus position-absolute top-0 end-0 text-primary display-6"
-          onClick={add}
+          onClick={add} 
         ></i>
       </div>
       <div>
