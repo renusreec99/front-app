@@ -12,4 +12,4 @@ function Display(){
       </div>
     )
 }
-export default Display;
+export default Display; 
