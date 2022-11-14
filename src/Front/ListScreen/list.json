@@ -1,0 +1,34 @@
+[
+    {
+        "id":123,
+        "fname":"Adrien",
+        "lname":"Olczak", 
+        "role":"admin",
+        "number":"415-310-1619",
+        "mail":"adrien@instawork.com"
+    },
+    {
+        "id":234,
+        "fname":"Charlene ",
+        "lname":"Pheme", 
+        "role":"",
+        "number":"415-310-1619",
+        "mail":"charlene@instawork.com"
+    },
+    {
+        "id":345,
+        "fname":"Benson",
+        "lname":"Mach", 
+        "role":"",
+        "number":"415-310-1619",
+        "mail":"benson@instawork.com"
+    },
+    {
+        "id":456,
+        "fname":"Dan",
+        "lname":"Petrie", 
+        "role":"",
+        "number":"415-310-1619",
+        "mail":"dan@instawork.com"
+    }
+]

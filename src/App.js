@@ -1,24 +1,27 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {BrowserRouter} from "react-router-dom";
+import {Routes,Route} from "react-router";
+import Display from './Front';
+import AddFront from './Front/AddScreen';
+import EditFront from './Front/EditScreen';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import frontReducer from './Front/reducer/front-reducer';
 
 function App() {
+  const store = configureStore({reducer: {a: frontReducer}});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+   <BrowserRouter>
+   <Routes>
+    <Route path="/*" element={<Display/>}/>
+    <Route path="/add" element={<AddFront/>}/>
+    <Route path="/edit/:ID" element={<EditFront/>}/>
+   </Routes>
+   </BrowserRouter>
+   </Provider>
   );
 }
 
