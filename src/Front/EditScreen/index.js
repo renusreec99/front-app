@@ -19,7 +19,7 @@ const EditFront = () => {
     navigate("/home");
   };
 
-  const goToHome = () => {
+  const home = () => {
     navigate("/home");
   };
 
@@ -29,7 +29,7 @@ const EditFront = () => {
         <h1 className="text-white">.</h1>
         <i
           className="bi bi-x position-absolute top-0 end-0 text-primary display-6"
-          onClick={goToHome}
+          onClick={home}
         ></i>
       </div>
       <div>
